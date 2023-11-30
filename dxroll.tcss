@@ -1,0 +1,67 @@
+Dice {
+    border: solid grey;
+    layout: horizontal;
+    background: $primary-background-darken-2;
+    min-width: 50;
+    margin: 1;
+    padding: 1;
+    height: 7;
+}
+
+ScrollableContainer {
+    background: $primary-background-darken-2;
+}
+
+LoadingIndicator {
+    color: grey;
+}
+
+.active LoadingIndicator {
+    color: $secondary;
+}
+
+GlobalDisplay {
+    min-width: 100%;
+    text-align: right;
+    padding: 1 1 0 1;
+    height: 2;
+    background: $primary-background-darken-2;
+    color: $secondary;
+}
+
+RollOutcomeDisplay {
+    color: grey;
+}
+
+.active RollOutcomeDisplay {
+    color: $secondary;
+}
+
+RollOutcomeDisplay {
+    min-width: 100%;
+    text-align: center;
+    margin-top: 1;
+}
+
+GlobalModScreen {
+    align: center middle;
+}
+
+#dialog {
+    grid-size: 1;
+    grid-gutter: 1;
+    grid-rows: 1fr;
+    padding: 1;
+    width: 60;
+    height: 7;
+    border: heavy $secondary;
+    background: $primary-background-darken-1;
+}
+
+.active {
+    border: heavy $secondary;
+}
+
+.hidden {
+    display: none;
+}
